@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'parent_container.dart';
+import 'welcome.dart';
 
 void main() {
   runApp(
     const MaterialApp(
-      home: ParentContainer(),
+      debugShowCheckedModeBanner: false,
+      home: WelcomeScreen(),
     ),
   );
 }

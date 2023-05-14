@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:medical_diagnosis_app/mainscreen.dart';
+// import 'login.dart';
 
 class WelcomeHeading extends StatelessWidget {
   const WelcomeHeading({super.key});
@@ -101,7 +103,14 @@ class _BottomPartState extends State<BottomPart> {
         child: Container(
           margin: const EdgeInsets.only(left: 20),
           child: TextButton(
-            onPressed: () {},
+            onPressed: () {
+              if (isChecked) {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const MainScreen()));
+              }
+            },
             child: const Text("Get Started"),
           ),
         ),
