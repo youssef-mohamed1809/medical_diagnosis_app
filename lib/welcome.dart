@@ -105,10 +105,8 @@ class _BottomPartState extends State<BottomPart> {
           child: TextButton(
             onPressed: () {
               if (isChecked) {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const MainScreen()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MainScreen()));
               }
             },
             child: const Text("Get Started"),
